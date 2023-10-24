@@ -1,0 +1,248 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: geologica;
+color: #f1f1f1;
+cursor: pointer;
+
+}
+html, body{
+height: 100%;
+width: 100%;
+background: linear-gradient(70deg, #000, #343434);
+
+}
+#main{
+    position:relative;
+    overflow: hidden;
+    
+
+}
+#page0{
+    
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+/* background: linear-gradient(70deg, #000, #343434); */
+
+    /* background-color: #f1f1f1; */
+    /* background-color: #343434; */
+    /* background-color: linear-gradient(70deg, #000, #343434); */
+/* background: linear-gradient(70deg, #000, #343434); */
+}
+#page1{
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+/* background: linear-gradient(70deg, #000, #343434); */
+
+    /* background-color: #343434; */
+
+    /* background-color: crimson; */
+}
+#page2{
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #f1f1f1; */
+    /* background-color: #343434; */
+/* background: linear-gradient(70deg, #000, #343434); */
+
+
+
+}
+#page3{
+/* background: linear-gradient(70deg, #000, #343434); */
+
+    /* background-color: #343434; */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+canvas{
+    position: relative;
+    z-index: 9;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+}
+.looptxt{
+
+    display: flex;
+
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top:30% ;
+    /* text in the One line only */
+    white-space: nowrap;
+    font-size: 100px;
+}
+.looptxt h1{
+    font-weight: 400;
+animation-name: ani;
+animation-duration: 80s;
+animation-timing-function:linear ;
+animation-iteration-count: infinite;
+
+}
+
+/* For looping the text */
+@keyframes ani{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    }
+
+.looptxt h1 span{
+    /* for text border color */
+    -webkit-text-stroke:1.2px #fff ;
+    color: transparent;
+    font-weight: 500;
+}
+.looptxt h1 span i{
+    /* for text border color */
+    -webkit-text-stroke:1.2px #fff ;
+    color: transparent;
+    font-weight: 500;
+}
+
+#nav{
+    height: 7%;
+    width: 100%;
+    /* background-color: crimson; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 25px; 
+}
+#nav h3{
+    font-weight: 400;
+    font-size: 21px;
+
+}
+#nav button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border:none;
+}
+#page0 h3{
+    position: absolute;
+    top: 60%;
+    font-weight: 400;
+    color: #f1f1f1;
+    left: 5%;
+}
+#page0 h4{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    font-weight: 400;
+    /* color: #343434; */
+
+}
+#page1 #rText{
+    position: absolute;
+    top: 30%;
+    left:10% ;
+}
+
+#page1 #rText h3{
+font-weight: 400;
+color: #f1f1f1;
+}
+#page1 #rText h1{
+    line-height: 1.5;
+color: #f1f1f1;
+font-size: 50px;
+}
+#page1 #lText{
+    position: absolute;
+    top: 50%;
+    right:10% ;
+    text-align: end;
+}
+
+#page1 #lText h3{
+font-weight: 400;
+color: #f1f1f1;
+}
+#page1 #lText h1{
+    line-height: 1.5;
+color: #f1f1f1;
+font-size: 40px;
+}
+
+#page2 #text1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#page2 #text1 h3{
+/* color: #343434; */
+/* color: crimson; */
+font-weight: 400;
+}
+#page2 #text1 h1{
+font-size: 55px;
+line-height: 1.5;
+}
+
+#page2 #text2{
+position: absolute;
+top: 55%;
+right: 10%;
+text-align: end;
+}
+#page2 #text2 p{
+    /* color: crimson; */
+    font-weight: 400;
+
+}
+#page3 #txt1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page3 #txt1 h3{
+    /* color: salmon; */
+    font-weight: 400;
+}
+#page3 #txt2{
+    position: absolute;
+top: 55%;
+right: 10%;
+text-align: end;
+}
+#page3 #txt2 h1{
+    font-size: 55px;
+/* line-height: 1.1; */
+}
+
+#page3 #txt2 h3{
+    color: #f1f1f1;
+font-weight: 400;
+} 
+#cursor {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    position: absolute;
+    z-index: 1;
+    transform: all linear 0.2s;
+  }
+ 
+  /* Preloader */
+  
